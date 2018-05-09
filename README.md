@@ -56,7 +56,7 @@ Date: Tue, 31 Jan 2017 23:43:40 GMT
 understand.</p>
 ```
 
-# iOS and Android Appa
+# iOS and Android Apps
 
 The React Native app, rndemo, integrates the Approov SDK on both iOS and Android apps. 
 
