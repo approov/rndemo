@@ -41,7 +41,6 @@ export default class App extends React.Component {
       return response.text();
     })
     .then((text) => {
-      //alert('Text: \'' + text + '\'', "Response");
       this.setState(previousState => {
         return { shape: text, status: '' };
       })
