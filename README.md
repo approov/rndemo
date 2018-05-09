@@ -56,15 +56,13 @@ Date: Tue, 31 Jan 2017 23:43:40 GMT
 understand.</p>
 ```
 
-# Building the Android App
+# iOS and Android Appa
 
-As a first step, copy the approov.aar library from the download demo package to 
-the React Native Android project in the rndemo/android/approov/ directory
+The React Native app, rndemo, integrates the Approov SDK on both iOS and Android apps. 
 
-Next, launch an Android emulator or attach an Android device and,
-from the top-level rndemo directory, run `npm run android`.
+To build and run the app on iOS, see [First experiences with React Native: bridging an iOS native module for app authentication](https://hackernoon.com/first-experiences-with-react-native-bridging-an-ios-native-module-for-app-authentication-501fec247b2b).
 
-This should rebuild the android project and run the rndemo client on the Android device.
+To build and run the app on Android, see [First experiences with React Native: bridging an Android native module for app authentication](https://hackernoon.com/first-experiences-with-react-native-bridging-an-android-native-module-for-app-authentication-501fec247b2b).
 
 # Running the RNDemo App
 
@@ -78,7 +76,7 @@ Approov-protected API call to teh backend shapes server. If teh Approov token is
 a random shape will be displayed. If teh Approov token is invalid or there is any other error,
 a froeny face and error message will be displayed.
 
-Approov attestation will always fail until the rndemo app has been properly registered.
+Note, Approov attestation will always fail until the rndemo app has been properly registered. Attestation will also always fail if running in teh iOS simulator or in either iOS or Android debuggers.
 
 # Registering an App
 
@@ -128,4 +126,4 @@ during the fetch call.
 
 # CAUTION
 
-This is a simple example for illustartive purposes, and it is not intended for production.
+This is a simple example for illustrative purposes, and it is not intended for production.
