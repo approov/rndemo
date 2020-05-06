@@ -1,17 +1,18 @@
 # Simple Approov React Native Demo
 
-> **IMPORTANT:** This repository relates to Approov 1 and has not been updated to reflect the [new features](https://approov.io/docs/v2.0/changelog/) and [usage](https://approov.io/docs/v2.0/approov-usage-documentation/) of [Approov 2](https://approov.io/docs/v2.0/approov-installation/), the latest version of Approov. We will be updating the repository soon. Meanwhile, please refer to the [guide](https://approov.io/docs/v2.0/approov-usage-documentation/#migrating-from-approov-1) for migrating from Approov 1 to Approov 2.
+
+> **IMPORTANT:** This repository is now **archived**, because it relates to Approov 1 which is **deprecated**. For Approov 2 please find [here](https://github.com/approov?q=quickstarts) the relevant Quick Start for your mobile platform and http stack. If you don't find one, please refer to the [Getting Started with Approov](https://approov.io/docs/latest/approov-usage-documentation/#getting-started-with-approov) guide or into the [guide](https://approov.io/docs/latest/approov-usage-documentation/#migrating-from-approov-1) for migrating from Approov 1 to Approov 2.
 
 This is a simple React Native client demonstrating Approov usage.
 
-The client is attested by the Approov library, and if registration is successful, 
+The client is attested by the Approov library, and if registration is successful,
 a random shape will be displayed when the 'get shape' button is pressed.
 
 For now, the demo runs on Android. The iOS version is on its way.
 
 # Prerequisites
 
-You will need to download the Approov Demo package at [approov.io](https://approov.io). 
+You will need to download the Approov Demo package at [approov.io](https://approov.io).
 See the demo download README.md file for more information.
 
 This demo uses the download demo's backend server, the approov.aar library, and the registration tools.
@@ -60,21 +61,21 @@ understand.</p>
 
 # iOS and Android Apps
 
-The React Native app, rndemo, integrates the Approov SDK on both iOS and Android apps. 
+The React Native app, rndemo, integrates the Approov SDK on both iOS and Android apps.
 
-To build and run the app on iOS, see [First experiences with React Native: bridging an iOS native module for app authentication](https://hackernoon.com/first-experiences-with-react-native-bridging-an-ios-native-module-for-app-authentication-501fec247b2b).
+To build and run the app on iOS, see [First experiences with React Native: bridging an iOS native module for app authentication](https://blog.approov.io/react-native-bridging-an-ios-native-module-for-app-authentication).
 
-To build and run the app on Android, see [First experiences with React Native: bridging an Android native module for app authentication](https://hackernoon.com/first-experiences-with-react-native-bridging-an-android-native-module-for-app-authentication-501fec247b2b).
+To build and run the app on Android, see [First experiences with React Native: bridging an Android native module for app authentication](https://blog.approov.io/react-native-bridging-an-android-native-module-for-app-authentication).
 
 # Running the RNDemo App
 
 The simple rndemo app contains only one screen. It has two buttons, `test hello` and `get shape`.
 
-The `test hello` button will attempt to connect with the backend server. If successful, 
+The `test hello` button will attempt to connect with the backend server. If successful,
 a smiley face will be displayed. If the connection fails, a frowny face will be displayed.
 
-The `get shape` button will fetch an approov token, attesting as necessary, and make an 
-Approov-protected API call to teh backend shapes server. If teh Approov token is valid, 
+The `get shape` button will fetch an approov token, attesting as necessary, and make an
+Approov-protected API call to teh backend shapes server. If teh Approov token is valid,
 a random shape will be displayed. If teh Approov token is invalid or there is any other error,
 a froeny face and error message will be displayed.
 
@@ -107,7 +108,7 @@ $ cd <demo root>/registration-tools/Android/Linux
 $ ./registration -a <project home>/rndemo/android/app/build/outputs/apk/debug/app-debug.apk -t <registration_access.tok from email> -e 2h
 ```
 
-The `-e` flag determines how long until the registration expires. It is considerate to only register your app for a 
+The `-e` flag determines how long until the registration expires. It is considerate to only register your app for a
 few hours so that the demo service does not overflow with stale registrations.
 
 # Test It Now Works
@@ -120,7 +121,7 @@ App.
 # Programming Notes
 
 The RNDemo demonstrates partially integrating the Approov SDK with React Native as a
-native module. 
+native module.
 
 The convenience function, `Approov.fetch(input, init)` wraps the normal React Native
 `fetch(input, init)` call by fetching an Approov token and adding it into the headers
